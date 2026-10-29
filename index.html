@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thayane Manoella Soares | Portfólio</title>
+  <meta name="description" content="Portfólio de Thayane Manoella Soares, estudante de Análise e Desenvolvimento de Sistemas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo">
+    <a class="marca" href="#inicio">Thayane Soares</a>
+    <nav aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <h1>Thayane Manoella Soares</h1>
+      <p class="hero-sub">Estudante de Análise e Desenvolvimento de Sistemas, transformando planilhas e processos manuais em soluções automatizadas.</p>
+      <a class="botao" href="#projetos">Ver projetos</a>
+
+      <!-- Código de cores padrão das fibras ópticas (12 fibras) -->
+      <div class="feixe" aria-hidden="true">
+        <span style="--c:#0072bc"></span><span style="--c:#f58220"></span>
+        <span style="--c:#3ca935"></span><span style="--c:#8b5a2b"></span>
+        <span style="--c:#708090"></span><span style="--c:#f2f2f2"></span>
+        <span style="--c:#d62828"></span><span style="--c:#1a1a1a"></span>
+        <span style="--c:#f2c200"></span><span style="--c:#7b3f98"></span>
+        <span style="--c:#e75480"></span><span style="--c:#00b5c4"></span>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <div class="texto">
+        <p>Curso Análise e Desenvolvimento de Sistemas na UNINTER (2026–2028) e, no trabalho, cuido do controle financeiro de drafts e medições de obras de fibra óptica.</p>
+        <p>Convivo todo dia com planilhas, prazos e valores que precisam bater. Por isso, o que mais me motiva em programação é automatizar tarefas repetitivas e deixar a informação mais clara para quem decide.</p>
+        <p>Estou construindo meu portfólio no GitHub com projetos que misturam o que aprendo na faculdade com problemas reais do meu dia a dia.</p>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+
+      <div class="filtros" role="group" aria-label="Filtrar projetos">
+        <button class="filtro ativo" data-filtro="todos" aria-pressed="true">Todos</button>
+        <button class="filtro" data-filtro="web" aria-pressed="false">Web</button>
+        <button class="filtro" data-filtro="automacao" aria-pressed="false">Automação</button>
+        <button class="filtro" data-filtro="estudos" aria-pressed="false">Estudos</button>
+      </div>
+
+      <ul class="projetos">
+        <!-- TROQUE os textos e links pelos seus projetos reais -->
+        <li class="projeto" data-tipo="web" style="--c:#0072bc">
+          <h3>Este portfólio</h3>
+          <p>Site pessoal feito do zero com HTML, CSS e JavaScript, responsivo e acessível.</p>
+          <p class="tags">HTML · CSS · JavaScript</p>
+          <a href="https://github.com/thayane-dev-br/portfolio">Ver código no GitHub</a>
+        </li>
+        <li class="projeto" data-tipo="automacao" style="--c:#f58220">
+          <h3>Automação do controle financeiro de obras</h3>
+          <p>Planilha que organiza drafts e medições, calcula valores e mostra um painel com o resumo financeiro.</p>
+          <p class="tags">Excel · Fórmulas · Painel</p>
+          <a href="https://github.com/thayane-dev-br/portfolio">Ver detalhes</a>
+        </li>
+        <li class="projeto" data-tipo="estudos" style="--c:#3ca935">
+          <h3>Exercícios de Programação Orientada a Objetos</h3>
+          <p>Classes, herança e encapsulamento aplicados em pequenos programas da faculdade.</p>
+          <p class="tags">Java · POO</p>
+          <a href="https://github.com/thayane-dev-br/portfolio">Ver código no GitHub</a>
+        </li>
+      </ul>
+      <p class="vazio" id="vazio" hidden>Nenhum projeto nesta categoria ainda.</p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <dl class="habilidades">
+        <div><dt>Em estudo</dt><dd>HTML, CSS, JavaScript, Java, lógica de programação</dd></div>
+        <div><dt>No trabalho</dt><dd>Excel avançado, controle financeiro, medições de obras</dd></div>
+        <div><dt>Idiomas</dt><dd>Português (nativo), inglês (em estudo)</dd></div>
+      </dl>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p class="texto">Quer conversar sobre projetos, estágio ou oportunidades? Fale comigo:</p>
+      <ul class="contatos">
+        <li><a href="mailto:SEU-EMAIL@exemplo.com">SEU-EMAIL@exemplo.com</a></li>
+        <li><a href="https://github.com/thayane-dev-br">github.com/thayane-dev-br</a></li>
+        <li><a href="https://www.linkedin.com/in/SEU-PERFIL">linkedin.com/in/SEU-PERFIL</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© <span id="ano">2026</span> Thayane Manoella Soares</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
